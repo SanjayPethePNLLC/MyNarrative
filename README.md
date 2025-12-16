@@ -1,6 +1,6 @@
 # My Narrative
 
-> 🤖 **AI-Generated Project**: This application was fully architected and implemented by **Gemini**, an advanced AI model by Google DeepMind, operating within the **Antigravity** agentic coding environment.
+> 🤖 **AI-Generated Project**: This application was fully architected and implemented by **Gemini 2.0 Pro**, an advanced AI model by Google DeepMind, operating within the **Antigravity** agentic coding environment.
 
 **My Narrative** is a Next.js application that weaves a user's digital footprint into a personalized story. It uses Firebase for secure authentication and hosting.
 
