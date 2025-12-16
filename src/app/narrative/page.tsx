@@ -30,7 +30,7 @@ export default function NarrativePage() {
     return (
         <main className="container" style={{ padding: '4rem 1rem' }}>
             <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3rem' }}>
-                <h2 style={{ fontSize: '1.5rem', color: 'var(--accent-gold)' }}>Narrative Weaver</h2>
+                <h2 style={{ fontSize: '1.5rem', color: 'var(--accent-gold)' }}>My Narrative</h2>
                 <button onClick={logout} style={{ background: 'transparent', border: '1px solid var(--text-secondary)', color: 'var(--text-secondary)', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer' }}>
                     Logout as {user.displayName}
                 </button>

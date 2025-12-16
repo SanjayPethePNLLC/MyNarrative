@@ -3,7 +3,7 @@ import { AuthProvider } from "@/lib/auth";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Narrative Weaver",
+    title: "My Narrative",
     description: "Weaving your digital story from the threads of the web.",
 };
 

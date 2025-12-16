@@ -23,7 +23,7 @@ export async function generateNarrative(user: User): Promise<NarrativeData> {
     const stories: string[] = [
         `In the vast digital expanse, a figure known as ${name} emerged. Tracing their origins to the domain of ${email.split('@')[1]}, digital footprints suggest a journey of curiosity. Known in some circles simply as "${firstName}", their reputation precedes them.`,
         `The archives speak of ${name}, a weaver of code and connector of ideas. The signals intercepted from ${email} verify their identity. It is said that they traverse the web with a unique signature, leaving positive impressions on the nodes they visit.`,
-        `A legend among the data streams, ${name} has been identified. With credentials linked to the Great Google Provider, they have accessed the Narrative Weaver. Their path is one of discovery, and the data suggests a future full of potential.`
+        `A legend among the data streams, ${name} has been identified. With credentials linked to the Great Google Provider, they have accessed My Narrative. Their path is one of discovery, and the data suggests a future full of potential.`
     ];
 
     const randomStory = stories[Math.floor(Math.random() * stories.length)];
