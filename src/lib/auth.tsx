@@ -2,9 +2,8 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import {
     onAuthStateChanged,
-    signInWithRedirect,
+    signInWithPopup,
     signOut as firebaseSignOut,
-    getRedirectResult,
     User
 } from "firebase/auth";
 import { auth, googleProvider } from "./firebase";
@@ -39,16 +38,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
             setLoading(false);
         });
 
-        getRedirectResult(auth).catch((error) => {
-            console.error("Auth Redirect Error:", error);
-        });
-
         return () => unsubscribe();
     }, []);
 
     const login = async () => {
         try {
-            await signInWithRedirect(auth, googleProvider);
+            await signInWithPopup(auth, googleProvider);
         } catch (error) {
             console.error("Login failed", error);
         }
