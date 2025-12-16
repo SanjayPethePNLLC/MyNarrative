@@ -4,14 +4,10 @@ provider:
     region: us-central1
 env:
   - variable: NEXT_PUBLIC_FIREBASE_API_KEY
-    value: AIzaSyB3xcuYgq9SPgT4n73HVjV0KynMrwrSRsI
+    value: "projects/my-narrative-7f86f/secrets/NEXT_PUBLIC_FIREBASE_API_KEY/versions/latest" # Example: Needs Secret Manager setup
   - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-    value: my-narrative-7f86f.firebaseapp.com
+    value: "my-narrative-7f86f.firebaseapp.com"
   - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
-    value: my-narrative-7f86f
-  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
-    value: my-narrative-7f86f.firebasestorage.app
-  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
-    value: 177275829086
-  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
-    value: 1:177275829086:web:321279ffd040460664adcf
+    value: "my-narrative-7f86f"
+# Note: For public repositories, sensitive values should be stored in Google Cloud Secret Manager
+# and referenced here, or set in the Firebase Console Settings.
